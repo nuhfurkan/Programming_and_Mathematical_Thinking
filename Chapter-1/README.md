@@ -6,7 +6,7 @@ There are three examples in this chapter.
   Implementation of exercise 1 is in the "exercise1()" function.
   
 2. Exercise 2:
-  This exercise aims to get email of a specific person from file emails.
+  This exercise aims to get email of a specific person from file "emails".
   Implementation of exercise 2 is in the "exercise2()" function.
   
 3. Exercise 3:
