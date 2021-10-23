@@ -2,26 +2,31 @@ import matplotlib.pyplot as plt
 
 #Finding a name
 def example1():
-    file = open("Chapter 1/name")
+    print("Example 1")
+    file = open("name")
     for line in file:
         if line.startswith("John"):
-            print(line)
+            print(line.strip("\n"))
+    print("----------\n")
 
 # Finding an email
 def example2():
-    file = open("Chapter 1/emails")
+    print("Example 2")
+    file = open("emails")
     for line in file:
         name, email = line.split(",")
         if (name == "John Wick"):
-            print(email)
+            print(email.strip("\n"))
+    print("----------\n")
 
 # Average of a collection of observations
 def example3():
+    print("Example 3")
     temps = []
     days = []
     sum = 0
     count = 0
-    file = open("Chapter 1/observations")
+    file = open("observations")
     for line in file:
         sum += float(line)
         count += 1
@@ -32,5 +37,8 @@ def example3():
     print("Average is " + str(round(sum/count, 2)))
     plt.plot(days, temps, "o")
     plt.show()
+    print("----------\n")
 
+example1()
+example2()
 example3()
